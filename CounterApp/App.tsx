@@ -1,9 +1,11 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import HolaMundoScreen from './src/screens/HolaMundoScreen';
+import CounterScreen from './src/screens/CounterScreen';
+import HomeworkScreen from './src/screens/HomeworkScreen';
+//import HolaMundoScreen from './src/screens/HolaMundoScreen';
 
 function App() {
-  return <HolaMundoScreen title="Hola Mundo IT" />;
+  return <HomeworkScreen />;
 }
 
 export default App;
