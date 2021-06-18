@@ -17,7 +17,7 @@ function App() {
           name="HomeScreen"
           component={HomeScreen}
           options={{
-            title: 'Pokedex',
+            title: 'Pokédex',
           }}
         />
       </Stack.Navigator>
