@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {View, Text, Button, TouchableOpacity} from 'react-native';
 import {styles} from '../theme/appTheme';
 
-function PageOneScreen(props: any) {
-  const {navigation} = props;
-
-  console.log(navigation);
+function PageOneScreen({navigation}: any) {
+  useEffect(() => {
+    navigation.setOptions({
+      headerLeft: () => (
+        <Button title="Menu" onPress={() => navigation.toggleDrawer()} />
+      ),
+    });
+  }, []);
 
   return (
     <View style={styles.globalMargin}>
